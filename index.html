@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EVSD Login Guard - Test Index</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 16px; }
+  li { margin: 10px 0; }
+  .warn { color: #b3261e; font-weight: bold; }
+  .silent { color: #1a7a3c; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>EVSD Login Guard — Test Pages</h1>
+<p>Each link is its own page, since the extension only checks the first password field per
+page load. Click each one in turn and confirm the banner behaves as labeled.</p>
+<ul>
+  <li><a href="test1-adfs.html">Test 1 — ADFS signature</a> <span class="warn">(expect WARNING)</span></li>
+  <li><a href="test2-microsoft.html">Test 2 — Microsoft/Entra signature</a> <span class="warn">(expect WARNING)</span></li>
+  <li><a href="test3-google.html">Test 3 — Google phrase signature</a> <span class="warn">(expect WARNING)</span></li>
+  <li><a href="test4-branding.html">Test 4 — District branding/instructions</a> <span class="warn">(expect WARNING)</span></li>
+  <li><a href="test5-typo.html">Test 5 — Typo variant ("Easy Valley")</a> <span class="warn">(expect WARNING)</span></li>
+  <li><a href="test6-unrelated.html">Test 6 — Unrelated generic login</a> <span class="silent">(expect SILENT)</span></li>
+  <li><a href="test7-ewu.html">Test 7 — Eastern Washington University</a> <span class="silent">(expect SILENT)</span></li>
+</ul>
+</body>
+</html>
