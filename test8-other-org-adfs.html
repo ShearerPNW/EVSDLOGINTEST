@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Test 8 - Unrelated org's real ADFS</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 16px; }
+  .banner-note { border: 3px solid #1a7a3c; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  h2 { color: #1a7a3c; margin-top: 0; }
+  input { display: block; margin: 8px 0; padding: 8px; width: 280px; }
+  .note { font-size: 14px; color: #555; }
+</style>
+</head>
+<body>
+<div class="banner-note">
+  <h2>Test 8 -- expect SILENT (unrelated org's real ADFS, no EVSD branding)</h2>
+  <p class="note">Simulates a completely unrelated organization's genuine ADFS login --
+  same generic Microsoft default structure, but nothing East Valley-related anywhere on
+  the page. This should NOT trigger, confirming the fix for false-positiving on other
+  orgs' real ADFS servers.</p>
+</div>
+<div id="loginArea">
+  <form id="loginForm">
+    <p>Contoso University</p>
+    <input id="userNameInput" type="text" placeholder="someone@contoso.edu">
+    <input id="passwordInput" type="password" placeholder="Password">
+    <div id="submissionArea"><button id="submitButton" type="button">Sign in</button></div>
+  </form>
+</div>
+</body>
+</html>

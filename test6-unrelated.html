@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Test 6 - Unrelated login</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 16px; }
+  .banner-note { border: 3px solid #1a7a3c; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  h2 { color: #1a7a3c; margin-top: 0; }
+  input { display: block; margin: 8px 0; padding: 8px; width: 280px; }
+  .note { font-size: 14px; color: #555; }
+</style>
+</head>
+<body>
+<div class="banner-note">
+  <h2>Test 6 -- expect SILENT (generic unrelated login)</h2>
+  <p class="note">No ADFS/Microsoft/Google/district signature -- should NOT trigger.</p>
+</div>
+<form>
+  <p>Welcome to Totally Unrelated App</p>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+</form>
+</body>
+</html>
